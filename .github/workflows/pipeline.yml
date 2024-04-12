@@ -44,5 +44,6 @@ jobs:
         node-version: 20.x
         cache: 'npm'
     - run: npx playwright install --with-deps
+    - run: npm install
     - run: npm start &
     - run: npm run test:ui
